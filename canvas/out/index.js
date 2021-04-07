@@ -296,3 +296,27 @@ function get_ctx(id) {
         }
     });
 }
+////////////////////////
+// pixel manipulation //
+////////////////////////
+{
+    let ctx = get_ctx("canvas_07");
+    let image = new Image();
+    image.onload = function () {
+        ctx.drawImage(image, 0, 0, ctx.canvas.width, ctx.canvas.height);
+        let pixel_data = ctx.getImageData(0, 0, ctx.canvas.width, ctx.canvas.height);
+        // stride of 4
+        for (let idx = 0; idx < pixel_data.data.length; idx += 4) {
+            let r = pixel_data.data[idx + 0];
+            let g = pixel_data.data[idx + 1];
+            let b = pixel_data.data[idx + 2];
+            let a = pixel_data.data[idx + 3];
+            let avg = 0.2 * r + 0.72 * g + 0.07 * b;
+            pixel_data.data[idx + 0] = avg;
+            pixel_data.data[idx + 1] = avg;
+            pixel_data.data[idx + 2] = avg;
+        }
+        ctx.putImageData(pixel_data, 0, 0);
+    };
+    image.src = "./images/blue_cat.jpg";
+}
