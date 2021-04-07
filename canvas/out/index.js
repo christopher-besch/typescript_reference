@@ -320,3 +320,22 @@ function get_ctx(id) {
     };
     image.src = "./images/blue_cat.jpg";
 }
+//////////////
+// download //
+//////////////
+{
+    let ctx = get_ctx("canvas_08");
+    ctx.fillStyle = "red";
+    ctx.fillRect(50, 50, 100, 100);
+}
+function download_canvas() {
+    let canvas = document.getElementById("canvas_08");
+    let image_url = canvas.toDataURL("image/png");
+    // create temporary link
+    let tmp_link = document.createElement("a");
+    tmp_link.download = "canvas.png";
+    tmp_link.href = image_url;
+    document.body.appendChild(tmp_link);
+    tmp_link.click();
+    // document.body.removeChild(tmp_link);
+}
