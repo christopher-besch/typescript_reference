@@ -158,3 +158,131 @@ function get_ctx(id) {
     }
     update();
 }
+//////////////////////
+// better animation //
+//////////////////////
+{
+    let ctx = get_ctx("canvas_05");
+    class Animation {
+        constructor() {
+            this.bound_update = this.update.bind(this);
+            this.last_frame_time = 0;
+            this.rectangles = [
+                {
+                    x: 0,
+                    y: 0,
+                    width: 100,
+                    height: 100,
+                    color: "red",
+                    speed_x: 10,
+                },
+                {
+                    x: 0,
+                    y: 100,
+                    width: 100,
+                    height: 100,
+                    color: "blue",
+                    speed_x: 20,
+                },
+                {
+                    x: 0,
+                    y: 200,
+                    width: 100,
+                    height: 100,
+                    color: "green",
+                    speed_x: 30,
+                },
+                {
+                    x: 0,
+                    y: 300,
+                    width: 100,
+                    height: 100,
+                    color: "orange",
+                    speed_x: 40,
+                },
+                {
+                    x: 0,
+                    y: 400,
+                    width: 100,
+                    height: 100,
+                    color: "yellow",
+                    speed_x: 50,
+                },
+                {
+                    x: 0,
+                    y: 500,
+                    width: 100,
+                    height: 100,
+                    color: "pink",
+                    speed_x: 60,
+                },
+                {
+                    x: 0,
+                    y: 600,
+                    width: 100,
+                    height: 100,
+                    color: "purple",
+                    speed_x: 70,
+                },
+            ];
+        }
+        init_animation() {
+            this.last_frame_time = Date.now();
+            this.update();
+        }
+        update() {
+            ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+            let current_frame_time = Date.now();
+            let frame_time_delta = current_frame_time - this.last_frame_time;
+            this.last_frame_time = current_frame_time;
+            this.rectangles.forEach(function (rectangle) {
+                // draw
+                ctx.fillStyle = rectangle.color;
+                ctx.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+                // update
+                rectangle.x += (rectangle.speed_x * frame_time_delta) / 1000;
+            });
+            window.requestAnimationFrame(this.bound_update);
+        }
+    }
+    let animation = new Animation();
+    animation.init_animation();
+}
+///////////////////
+// hit detection //
+///////////////////
+{
+    let ctx = get_ctx("canvas_06");
+    class Object {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+    }
+    class Circle extends Object {
+        constructor(x, y, radius) {
+            super(x, y);
+            this.radius = radius;
+        }
+        is_hit_by(x, y) {
+            let distance = Math.sqrt(Math.pow((this.x - x), 2) + Math.pow((this.y - y), 2));
+            return distance <= this.radius;
+        }
+    }
+    class Rectangle extends Object {
+        constructor(x, y, width, height) {
+            super(x, y);
+            this.width = width;
+            this.height = height;
+        }
+        is_hit_by(x, y) {
+            return x >= this.x && x <= this.x + this.width && y >= this.y && y <= this.y + this.height;
+        }
+    }
+    let circle = new Circle(150, 150, 100);
+    let rectangle = new Rectangle(250, 50, 100, 200);
+    ctx.beginPath();
+    ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+}
