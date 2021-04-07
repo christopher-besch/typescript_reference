@@ -285,4 +285,14 @@ function get_ctx(id) {
     ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2);
     ctx.fill();
     ctx.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+    ctx.canvas.addEventListener("mousedown", (e) => {
+        if (circle.is_hit_by(e.offsetX, e.offsetY)) {
+            console.log("Circle Hit");
+        }
+        if (rectangle.is_hit_by(e.offsetX, e.offsetY)) {
+            ctx.fillStyle = "red";
+            ctx.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+            console.log("Rectangle Hit");
+        }
+    });
 }
