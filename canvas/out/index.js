@@ -337,5 +337,5 @@ function download_canvas() {
     tmp_link.href = image_url;
     document.body.appendChild(tmp_link);
     tmp_link.click();
-    // document.body.removeChild(tmp_link);
+    document.body.removeChild(tmp_link);
 }
