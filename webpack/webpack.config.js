@@ -7,7 +7,9 @@ module.exports = (env) => {
         // eval good for development
         devtool: env["production"] ? false : "eval-source-map",
         // only entry file, include any imported files
-        entry: "./src/index.ts",
+        entry: {
+            index: "./src/index.ts",
+        },
         module: {
             rules: [
                 {
@@ -25,7 +27,8 @@ module.exports = (env) => {
         output: {
             // tell dev server where to serve code in memory from
             publicPath: "public",
-            filename: "index.js",
+            // template based on keys in entry
+            filename: "[name].js",
             // need absolute path
             path: path.resolve(__dirname, "public"),
         },
