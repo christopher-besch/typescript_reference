@@ -2,6 +2,8 @@
 
 Simple Overview of TypeScript Features
 
+# [Gatsby](gatsby)
+
 # [Canvas](canvas)
 
 Tutorial from [nodehead](https://www.youtube.com/watch?v=eL1X8urHJmA&list=PLkyEadCJGLm0tPLdUnRRZ3WQYH50TvzUQ) written in TypeScript.
