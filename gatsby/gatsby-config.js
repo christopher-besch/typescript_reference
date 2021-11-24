@@ -10,10 +10,13 @@ module.exports = {
         {
             resolve: "gatsby-plugin-typescript",
             options: {
-                isTSX: true,
-                jsxPragma: "jsx",
-                allExtensions: true,
             },
         },
+        {
+            resolve: "gatsby-plugin-tsconfig-paths",
+            options: {
+                configFile: `${__dirname}/tsconfig.json`,
+            },
+        }
     ],
 }

@@ -1,14 +1,14 @@
 import React from "react";
+import { PageProps } from "gatsby";
 import Navbar from "./navbar";
 import "../styles/global.css";
 
-// TODO: type might not be correct
-export default function Layout({ children }: { children: React.ReactElement }) {
+export default function Layout(props: PageProps) {
     return (
         <div className="layout">
             <Navbar />
             <div className="content">
-                {children}
+                {props.children}
             </div>
             <footer>
                 <p>Copyright 2021 stuff</p>
