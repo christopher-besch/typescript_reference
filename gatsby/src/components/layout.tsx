@@ -1,9 +1,9 @@
 import React from "react";
-import { PageProps } from "gatsby";
+// import { PageProps } from "gatsby";
 import Navbar from "./navbar";
 import "../styles/global.css";
 
-export default function Layout(props: PageProps) {
+export default function Layout(props: any) {
     return (
         <div className="layout">
             <Navbar />
