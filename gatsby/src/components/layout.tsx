@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 import "../styles/global.css";
 
 // from https://ozantunca.org/the-right-way-to-type-function-components-in-react-with-typescript
-export const Layout: React.FC = (props) =>
+const Layout: React.FC = (props) =>
     <div className="layout">
         <Navbar />
         <div className="content">
@@ -13,3 +13,4 @@ export const Layout: React.FC = (props) =>
             <p>Copyright 2021 stuff</p>
         </footer>
     </div>;
+export default Layout;

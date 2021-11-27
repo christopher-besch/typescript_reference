@@ -1,16 +1,10 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 // from https://djmm.me/post/typescript-graphql-and-gatsby/
-import { SiteInfo } from "./__generated__/site-info";
-import { Layout } from "../components/layout";
+import Layout from "../components/layout";
 import * as styles from "../styles/home.module.css";
 
-interface HomeProps {
-    data: SiteInfo;
-}
-
-const Home: React.FC<HomeProps> = (props) => {
-    console.log(props);
+const Home: React.FC = () => {
     return (
         <Layout>
             <section className={styles.header}>
@@ -26,14 +20,3 @@ const Home: React.FC<HomeProps> = (props) => {
     )
 };
 export default Home;
-
-export const query = graphql`
-query SiteInfo {
-  site {
-    siteMetadata {
-      title
-      description
-    }
-  }
-}
-`;

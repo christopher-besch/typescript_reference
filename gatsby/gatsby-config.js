@@ -5,8 +5,6 @@ module.exports = {
     plugins: [
         {
             resolve: "gatsby-plugin-typescript",
-            options: {
-            },
         },
         {
             resolve: "gatsby-plugin-tsconfig-paths",
@@ -21,6 +19,16 @@ module.exports = {
                 ignore: ["__generated__/*"],
             }
         },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "projects",
+                path: `${__dirname}/src/projects`,
+            }
+        },
+        {
+            resolve: "gatsby-transformer-remark",
+        }
     ],
     siteMetadata: {
         title: "Gatsby Test",

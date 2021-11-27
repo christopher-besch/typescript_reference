@@ -11,9 +11,9 @@
         "start": "gatsby develop",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
-        "load-gql": "node_modules/.bin/get-graphql-schema http://localhost:8000/___graphql > schema.graphql",
         "type-check": "find ./src/ -name __generated__ -type d | xargs rm -r -v || true && node_modules/.bin/tsgql typegen && tsc && echo 'type check ok'",
-        "type-check:watch": "tsc --watch"
+        "type-check:watch": "tsc --watch",
+        "load-gql": "node_modules/.bin/get-graphql-schema http://localhost:8000/___graphql > schema.graphql && npm run type-check"
     },
     "dependencies": {
         "react": "^17.0.1",
@@ -27,6 +27,8 @@
         "gatsby-link": "^4.2.0",
         "gatsby-plugin-tsconfig-paths": "^1.0.3",
         "gatsby-react-router-scroll": "^5.2.0",
+        "gatsby-source-filesystem": "^4.2.0",
+        "gatsby-transformer-remark": "^5.2.0",
         "get-graphql-schema": "^2.1.2",
         "prettier": "^2.4.1",
         "ts-graphql-plugin": "^2.1.5",

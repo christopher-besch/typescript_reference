@@ -1,10 +1,8 @@
 import React from "react";
-import { Layout } from "../components/layout";
+import Layout from "../components/layout";
 
-export default function About() {
-    return (
-        <Layout>
-            <div>About me</div>
-        </Layout>
-    )
-}
+const About: React.FC = () =>
+    <Layout>
+        <div>About me</div>
+    </Layout>;
+export default About;
