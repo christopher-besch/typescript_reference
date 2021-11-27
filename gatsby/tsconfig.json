@@ -95,6 +95,8 @@
         /* Completeness */
         // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
         "skipLibCheck": true, /* Skip type checking all .d.ts files. */
+        // create schema for GraphQL
+        // according to https://djmm.me/post/typescript-graphql-and-gatsby/
         "plugins": [
             {
                 "name": "ts-graphql-plugin",

@@ -8,7 +8,8 @@ interface ProjectProps {
     data: ProjectsPage;
 }
 const Projects: React.FC<ProjectProps> = (props) => {
-    const projects = props.data.allMarkdownRemark.nodes;
+    const projects = props.data.projects.nodes;
+    const contact = props.data.contact?.siteMetadata?.contact as string;
     return (
         <Layout>
             <div className={styles.portfolio}>
@@ -24,6 +25,7 @@ const Projects: React.FC<ProjectProps> = (props) => {
                         </Link>
                     ))}
                 </div>
+                <p>Like what you see: Email me at {contact} for a quote!</p>
             </div>
         </Layout>
     );
@@ -32,15 +34,20 @@ export default Projects;
 
 export const query = graphql`
     query ProjectsPage {
-      allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
-        nodes {
-          frontmatter {
-            slug
-            stack
-            title
-          }
-          id
+    projects: allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+      nodes {
+        frontmatter {
+          slug
+          stack
+          title
         }
+        id
       }
     }
+    contact: site {
+      siteMetadata {
+        contact
+      }
+    }
+}
 `;
