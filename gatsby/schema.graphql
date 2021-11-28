@@ -723,6 +723,82 @@ enum FileFieldsEnum {
   childrenMarkdownRemark___frontmatter___stack
   childrenMarkdownRemark___frontmatter___slug
   childrenMarkdownRemark___frontmatter___date
+  childrenMarkdownRemark___frontmatter___thumb___sourceInstanceName
+  childrenMarkdownRemark___frontmatter___thumb___absolutePath
+  childrenMarkdownRemark___frontmatter___thumb___relativePath
+  childrenMarkdownRemark___frontmatter___thumb___extension
+  childrenMarkdownRemark___frontmatter___thumb___size
+  childrenMarkdownRemark___frontmatter___thumb___prettySize
+  childrenMarkdownRemark___frontmatter___thumb___modifiedTime
+  childrenMarkdownRemark___frontmatter___thumb___accessTime
+  childrenMarkdownRemark___frontmatter___thumb___changeTime
+  childrenMarkdownRemark___frontmatter___thumb___birthTime
+  childrenMarkdownRemark___frontmatter___thumb___root
+  childrenMarkdownRemark___frontmatter___thumb___dir
+  childrenMarkdownRemark___frontmatter___thumb___base
+  childrenMarkdownRemark___frontmatter___thumb___ext
+  childrenMarkdownRemark___frontmatter___thumb___name
+  childrenMarkdownRemark___frontmatter___thumb___relativeDirectory
+  childrenMarkdownRemark___frontmatter___thumb___dev
+  childrenMarkdownRemark___frontmatter___thumb___mode
+  childrenMarkdownRemark___frontmatter___thumb___nlink
+  childrenMarkdownRemark___frontmatter___thumb___uid
+  childrenMarkdownRemark___frontmatter___thumb___gid
+  childrenMarkdownRemark___frontmatter___thumb___rdev
+  childrenMarkdownRemark___frontmatter___thumb___ino
+  childrenMarkdownRemark___frontmatter___thumb___atimeMs
+  childrenMarkdownRemark___frontmatter___thumb___mtimeMs
+  childrenMarkdownRemark___frontmatter___thumb___ctimeMs
+  childrenMarkdownRemark___frontmatter___thumb___atime
+  childrenMarkdownRemark___frontmatter___thumb___mtime
+  childrenMarkdownRemark___frontmatter___thumb___ctime
+  childrenMarkdownRemark___frontmatter___thumb___birthtime
+  childrenMarkdownRemark___frontmatter___thumb___birthtimeMs
+  childrenMarkdownRemark___frontmatter___thumb___blksize
+  childrenMarkdownRemark___frontmatter___thumb___blocks
+  childrenMarkdownRemark___frontmatter___thumb___publicURL
+  childrenMarkdownRemark___frontmatter___thumb___childrenMarkdownRemark
+  childrenMarkdownRemark___frontmatter___thumb___childrenImageSharp
+  childrenMarkdownRemark___frontmatter___thumb___id
+  childrenMarkdownRemark___frontmatter___thumb___children
+  childrenMarkdownRemark___frontmatter___featuredImg___sourceInstanceName
+  childrenMarkdownRemark___frontmatter___featuredImg___absolutePath
+  childrenMarkdownRemark___frontmatter___featuredImg___relativePath
+  childrenMarkdownRemark___frontmatter___featuredImg___extension
+  childrenMarkdownRemark___frontmatter___featuredImg___size
+  childrenMarkdownRemark___frontmatter___featuredImg___prettySize
+  childrenMarkdownRemark___frontmatter___featuredImg___modifiedTime
+  childrenMarkdownRemark___frontmatter___featuredImg___accessTime
+  childrenMarkdownRemark___frontmatter___featuredImg___changeTime
+  childrenMarkdownRemark___frontmatter___featuredImg___birthTime
+  childrenMarkdownRemark___frontmatter___featuredImg___root
+  childrenMarkdownRemark___frontmatter___featuredImg___dir
+  childrenMarkdownRemark___frontmatter___featuredImg___base
+  childrenMarkdownRemark___frontmatter___featuredImg___ext
+  childrenMarkdownRemark___frontmatter___featuredImg___name
+  childrenMarkdownRemark___frontmatter___featuredImg___relativeDirectory
+  childrenMarkdownRemark___frontmatter___featuredImg___dev
+  childrenMarkdownRemark___frontmatter___featuredImg___mode
+  childrenMarkdownRemark___frontmatter___featuredImg___nlink
+  childrenMarkdownRemark___frontmatter___featuredImg___uid
+  childrenMarkdownRemark___frontmatter___featuredImg___gid
+  childrenMarkdownRemark___frontmatter___featuredImg___rdev
+  childrenMarkdownRemark___frontmatter___featuredImg___ino
+  childrenMarkdownRemark___frontmatter___featuredImg___atimeMs
+  childrenMarkdownRemark___frontmatter___featuredImg___mtimeMs
+  childrenMarkdownRemark___frontmatter___featuredImg___ctimeMs
+  childrenMarkdownRemark___frontmatter___featuredImg___atime
+  childrenMarkdownRemark___frontmatter___featuredImg___mtime
+  childrenMarkdownRemark___frontmatter___featuredImg___ctime
+  childrenMarkdownRemark___frontmatter___featuredImg___birthtime
+  childrenMarkdownRemark___frontmatter___featuredImg___birthtimeMs
+  childrenMarkdownRemark___frontmatter___featuredImg___blksize
+  childrenMarkdownRemark___frontmatter___featuredImg___blocks
+  childrenMarkdownRemark___frontmatter___featuredImg___publicURL
+  childrenMarkdownRemark___frontmatter___featuredImg___childrenMarkdownRemark
+  childrenMarkdownRemark___frontmatter___featuredImg___childrenImageSharp
+  childrenMarkdownRemark___frontmatter___featuredImg___id
+  childrenMarkdownRemark___frontmatter___featuredImg___children
   childrenMarkdownRemark___excerpt @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childrenMarkdownRemark___rawMarkdownBody @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childrenMarkdownRemark___fileAbsolutePath @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
@@ -780,6 +856,82 @@ enum FileFieldsEnum {
   childMarkdownRemark___frontmatter___stack
   childMarkdownRemark___frontmatter___slug
   childMarkdownRemark___frontmatter___date
+  childMarkdownRemark___frontmatter___thumb___sourceInstanceName
+  childMarkdownRemark___frontmatter___thumb___absolutePath
+  childMarkdownRemark___frontmatter___thumb___relativePath
+  childMarkdownRemark___frontmatter___thumb___extension
+  childMarkdownRemark___frontmatter___thumb___size
+  childMarkdownRemark___frontmatter___thumb___prettySize
+  childMarkdownRemark___frontmatter___thumb___modifiedTime
+  childMarkdownRemark___frontmatter___thumb___accessTime
+  childMarkdownRemark___frontmatter___thumb___changeTime
+  childMarkdownRemark___frontmatter___thumb___birthTime
+  childMarkdownRemark___frontmatter___thumb___root
+  childMarkdownRemark___frontmatter___thumb___dir
+  childMarkdownRemark___frontmatter___thumb___base
+  childMarkdownRemark___frontmatter___thumb___ext
+  childMarkdownRemark___frontmatter___thumb___name
+  childMarkdownRemark___frontmatter___thumb___relativeDirectory
+  childMarkdownRemark___frontmatter___thumb___dev
+  childMarkdownRemark___frontmatter___thumb___mode
+  childMarkdownRemark___frontmatter___thumb___nlink
+  childMarkdownRemark___frontmatter___thumb___uid
+  childMarkdownRemark___frontmatter___thumb___gid
+  childMarkdownRemark___frontmatter___thumb___rdev
+  childMarkdownRemark___frontmatter___thumb___ino
+  childMarkdownRemark___frontmatter___thumb___atimeMs
+  childMarkdownRemark___frontmatter___thumb___mtimeMs
+  childMarkdownRemark___frontmatter___thumb___ctimeMs
+  childMarkdownRemark___frontmatter___thumb___atime
+  childMarkdownRemark___frontmatter___thumb___mtime
+  childMarkdownRemark___frontmatter___thumb___ctime
+  childMarkdownRemark___frontmatter___thumb___birthtime
+  childMarkdownRemark___frontmatter___thumb___birthtimeMs
+  childMarkdownRemark___frontmatter___thumb___blksize
+  childMarkdownRemark___frontmatter___thumb___blocks
+  childMarkdownRemark___frontmatter___thumb___publicURL
+  childMarkdownRemark___frontmatter___thumb___childrenMarkdownRemark
+  childMarkdownRemark___frontmatter___thumb___childrenImageSharp
+  childMarkdownRemark___frontmatter___thumb___id
+  childMarkdownRemark___frontmatter___thumb___children
+  childMarkdownRemark___frontmatter___featuredImg___sourceInstanceName
+  childMarkdownRemark___frontmatter___featuredImg___absolutePath
+  childMarkdownRemark___frontmatter___featuredImg___relativePath
+  childMarkdownRemark___frontmatter___featuredImg___extension
+  childMarkdownRemark___frontmatter___featuredImg___size
+  childMarkdownRemark___frontmatter___featuredImg___prettySize
+  childMarkdownRemark___frontmatter___featuredImg___modifiedTime
+  childMarkdownRemark___frontmatter___featuredImg___accessTime
+  childMarkdownRemark___frontmatter___featuredImg___changeTime
+  childMarkdownRemark___frontmatter___featuredImg___birthTime
+  childMarkdownRemark___frontmatter___featuredImg___root
+  childMarkdownRemark___frontmatter___featuredImg___dir
+  childMarkdownRemark___frontmatter___featuredImg___base
+  childMarkdownRemark___frontmatter___featuredImg___ext
+  childMarkdownRemark___frontmatter___featuredImg___name
+  childMarkdownRemark___frontmatter___featuredImg___relativeDirectory
+  childMarkdownRemark___frontmatter___featuredImg___dev
+  childMarkdownRemark___frontmatter___featuredImg___mode
+  childMarkdownRemark___frontmatter___featuredImg___nlink
+  childMarkdownRemark___frontmatter___featuredImg___uid
+  childMarkdownRemark___frontmatter___featuredImg___gid
+  childMarkdownRemark___frontmatter___featuredImg___rdev
+  childMarkdownRemark___frontmatter___featuredImg___ino
+  childMarkdownRemark___frontmatter___featuredImg___atimeMs
+  childMarkdownRemark___frontmatter___featuredImg___mtimeMs
+  childMarkdownRemark___frontmatter___featuredImg___ctimeMs
+  childMarkdownRemark___frontmatter___featuredImg___atime
+  childMarkdownRemark___frontmatter___featuredImg___mtime
+  childMarkdownRemark___frontmatter___featuredImg___ctime
+  childMarkdownRemark___frontmatter___featuredImg___birthtime
+  childMarkdownRemark___frontmatter___featuredImg___birthtimeMs
+  childMarkdownRemark___frontmatter___featuredImg___blksize
+  childMarkdownRemark___frontmatter___featuredImg___blocks
+  childMarkdownRemark___frontmatter___featuredImg___publicURL
+  childMarkdownRemark___frontmatter___featuredImg___childrenMarkdownRemark
+  childMarkdownRemark___frontmatter___featuredImg___childrenImageSharp
+  childMarkdownRemark___frontmatter___featuredImg___id
+  childMarkdownRemark___frontmatter___featuredImg___children
   childMarkdownRemark___excerpt @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childMarkdownRemark___rawMarkdownBody @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childMarkdownRemark___fileAbsolutePath @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1740,6 +1892,162 @@ enum MarkdownRemarkFieldsEnum {
   frontmatter___stack
   frontmatter___slug
   frontmatter___date
+  frontmatter___thumb___sourceInstanceName
+  frontmatter___thumb___absolutePath
+  frontmatter___thumb___relativePath
+  frontmatter___thumb___extension
+  frontmatter___thumb___size
+  frontmatter___thumb___prettySize
+  frontmatter___thumb___modifiedTime
+  frontmatter___thumb___accessTime
+  frontmatter___thumb___changeTime
+  frontmatter___thumb___birthTime
+  frontmatter___thumb___root
+  frontmatter___thumb___dir
+  frontmatter___thumb___base
+  frontmatter___thumb___ext
+  frontmatter___thumb___name
+  frontmatter___thumb___relativeDirectory
+  frontmatter___thumb___dev
+  frontmatter___thumb___mode
+  frontmatter___thumb___nlink
+  frontmatter___thumb___uid
+  frontmatter___thumb___gid
+  frontmatter___thumb___rdev
+  frontmatter___thumb___ino
+  frontmatter___thumb___atimeMs
+  frontmatter___thumb___mtimeMs
+  frontmatter___thumb___ctimeMs
+  frontmatter___thumb___atime
+  frontmatter___thumb___mtime
+  frontmatter___thumb___ctime
+  frontmatter___thumb___birthtime
+  frontmatter___thumb___birthtimeMs
+  frontmatter___thumb___blksize
+  frontmatter___thumb___blocks
+  frontmatter___thumb___publicURL
+  frontmatter___thumb___childrenMarkdownRemark
+  frontmatter___thumb___childrenMarkdownRemark___id
+  frontmatter___thumb___childrenMarkdownRemark___excerpt @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenMarkdownRemark___rawMarkdownBody @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenMarkdownRemark___fileAbsolutePath @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenMarkdownRemark___html @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenMarkdownRemark___htmlAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenMarkdownRemark___excerptAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenMarkdownRemark___headings @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenMarkdownRemark___timeToRead @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenMarkdownRemark___tableOfContents @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenMarkdownRemark___children @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childMarkdownRemark___id
+  frontmatter___thumb___childMarkdownRemark___excerpt @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childMarkdownRemark___rawMarkdownBody @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childMarkdownRemark___fileAbsolutePath @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childMarkdownRemark___html @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childMarkdownRemark___htmlAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childMarkdownRemark___excerptAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childMarkdownRemark___headings @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childMarkdownRemark___timeToRead @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childMarkdownRemark___tableOfContents @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childMarkdownRemark___children @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenImageSharp
+  frontmatter___thumb___childrenImageSharp___gatsbyImageData @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenImageSharp___id @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childrenImageSharp___children @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childImageSharp___gatsbyImageData @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childImageSharp___id @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___childImageSharp___children @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___thumb___id
+  frontmatter___thumb___parent___id
+  frontmatter___thumb___parent___children
+  frontmatter___thumb___children
+  frontmatter___thumb___children___id
+  frontmatter___thumb___children___children
+  frontmatter___thumb___internal___content
+  frontmatter___thumb___internal___contentDigest
+  frontmatter___thumb___internal___description
+  frontmatter___thumb___internal___fieldOwners
+  frontmatter___thumb___internal___ignoreType
+  frontmatter___thumb___internal___mediaType
+  frontmatter___thumb___internal___owner
+  frontmatter___thumb___internal___type
+  frontmatter___featuredImg___sourceInstanceName
+  frontmatter___featuredImg___absolutePath
+  frontmatter___featuredImg___relativePath
+  frontmatter___featuredImg___extension
+  frontmatter___featuredImg___size
+  frontmatter___featuredImg___prettySize
+  frontmatter___featuredImg___modifiedTime
+  frontmatter___featuredImg___accessTime
+  frontmatter___featuredImg___changeTime
+  frontmatter___featuredImg___birthTime
+  frontmatter___featuredImg___root
+  frontmatter___featuredImg___dir
+  frontmatter___featuredImg___base
+  frontmatter___featuredImg___ext
+  frontmatter___featuredImg___name
+  frontmatter___featuredImg___relativeDirectory
+  frontmatter___featuredImg___dev
+  frontmatter___featuredImg___mode
+  frontmatter___featuredImg___nlink
+  frontmatter___featuredImg___uid
+  frontmatter___featuredImg___gid
+  frontmatter___featuredImg___rdev
+  frontmatter___featuredImg___ino
+  frontmatter___featuredImg___atimeMs
+  frontmatter___featuredImg___mtimeMs
+  frontmatter___featuredImg___ctimeMs
+  frontmatter___featuredImg___atime
+  frontmatter___featuredImg___mtime
+  frontmatter___featuredImg___ctime
+  frontmatter___featuredImg___birthtime
+  frontmatter___featuredImg___birthtimeMs
+  frontmatter___featuredImg___blksize
+  frontmatter___featuredImg___blocks
+  frontmatter___featuredImg___publicURL
+  frontmatter___featuredImg___childrenMarkdownRemark
+  frontmatter___featuredImg___childrenMarkdownRemark___id
+  frontmatter___featuredImg___childrenMarkdownRemark___excerpt @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenMarkdownRemark___rawMarkdownBody @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenMarkdownRemark___fileAbsolutePath @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenMarkdownRemark___html @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenMarkdownRemark___htmlAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenMarkdownRemark___excerptAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenMarkdownRemark___headings @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenMarkdownRemark___timeToRead @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenMarkdownRemark___tableOfContents @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenMarkdownRemark___children @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childMarkdownRemark___id
+  frontmatter___featuredImg___childMarkdownRemark___excerpt @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childMarkdownRemark___rawMarkdownBody @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childMarkdownRemark___fileAbsolutePath @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childMarkdownRemark___html @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childMarkdownRemark___htmlAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childMarkdownRemark___excerptAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childMarkdownRemark___headings @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childMarkdownRemark___timeToRead @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childMarkdownRemark___tableOfContents @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childMarkdownRemark___children @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenImageSharp
+  frontmatter___featuredImg___childrenImageSharp___gatsbyImageData @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenImageSharp___id @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childrenImageSharp___children @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childImageSharp___gatsbyImageData @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childImageSharp___id @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___childImageSharp___children @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
+  frontmatter___featuredImg___id
+  frontmatter___featuredImg___parent___id
+  frontmatter___featuredImg___parent___children
+  frontmatter___featuredImg___children
+  frontmatter___featuredImg___children___id
+  frontmatter___featuredImg___children___children
+  frontmatter___featuredImg___internal___content
+  frontmatter___featuredImg___internal___contentDigest
+  frontmatter___featuredImg___internal___description
+  frontmatter___featuredImg___internal___fieldOwners
+  frontmatter___featuredImg___internal___ignoreType
+  frontmatter___featuredImg___internal___mediaType
+  frontmatter___featuredImg___internal___owner
+  frontmatter___featuredImg___internal___type
   excerpt @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   rawMarkdownBody @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   fileAbsolutePath @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1889,6 +2197,8 @@ type MarkdownRemarkFrontmatter {
     """Configures the locale Moment.js will use to format the date."""
     locale: String
   ): Date
+  thumb: File
+  featuredImg: File
 }
 
 input MarkdownRemarkFrontmatterFilterInput {
@@ -1896,6 +2206,8 @@ input MarkdownRemarkFrontmatterFilterInput {
   stack: StringQueryOperatorInput
   slug: StringQueryOperatorInput
   date: DateQueryOperatorInput
+  thumb: FileFilterInput
+  featuredImg: FileFilterInput
 }
 
 type MarkdownRemarkGroupConnection {

@@ -1,4 +1,5 @@
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage, IGatsbyImageData, ImageDataLike } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../../components/layout";
 import * as styles from "../../styles/projects.module.css";
@@ -19,6 +20,7 @@ const Projects: React.FC<ProjectProps> = (props) => {
                     {projects.map(project => (
                         <Link to={`/projects/${project.frontmatter?.slug}`} key={project.id}>
                             <div>
+                                <GatsbyImage image={getImage(project.frontmatter?.thumb as ImageDataLike) as IGatsbyImageData} alt="project img" />
                                 <h3>{project.frontmatter?.title}</h3>
                                 <p>{project.frontmatter?.stack}</p>
                             </div>
@@ -34,20 +36,27 @@ export default Projects;
 
 export const query = graphql`
     query ProjectsPage {
-    projects: allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
-      nodes {
-        frontmatter {
-          slug
-          stack
-          title
+      projects: allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+        nodes {
+          frontmatter {
+            slug
+            stack
+            title
+            thumb {
+              childImageSharp {
+                gatsbyImageData (
+                  placeholder: BLURRED
+                )
+              }
+            }
+          }
+          id
         }
-        id
+      }
+      contact: site {
+        siteMetadata {
+          contact
+        }
       }
     }
-    contact: site {
-      siteMetadata {
-        contact
-      }
-    }
-}
 `;
